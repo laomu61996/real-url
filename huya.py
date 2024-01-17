@@ -33,8 +33,8 @@ def get_real_url(room_id):
         room_url = 'https://m.huya.com/' + str(room_id)
         header = {
             'Content-Type': 'application/x-www-form-urlencoded',
-            'User-Agent': 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) '
-                          'Chrome/75.0.3770.100 Mobile Safari/537.36 '
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; MI 5X; Flow) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/347.0.0.268 Mobile Safari/537.36 '
         }
         response = requests.get(url=room_url, headers=header).text
         liveLineUrl = re.findall(r'"liveLineUrl":"([\s\S]*?)",', response)[0]
